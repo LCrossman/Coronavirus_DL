@@ -18,6 +18,13 @@ MacOS 10.12.6 (Sierra) or later (no GPU support)<br>
 Raspbian 9.0 or later<br>
 <br>
 <br>
+Files containing computer simulated (DL) sequences:
+1. spike_from_random_1.fasta
+100 entirely simulated coronavirus spike protein sequences generated using seed texts with 16 amino acids selected at random <br>from the start of each protein in the training set.<br>
+2. spike_from_sars_0.5.fasta<br>
+Entirely simulated coronavirus spike protein sequences generated using a seed text of 64 amino acids from the start of SARS-<br>CoV-2 spike protein.<br>
+<br>
+<b> To Predict:</b>
 Place the prediction model files (model.h5 and model.json) in the same directory<br>
 To predict using random amino acids from the training set place seeds.txt in the same directory<br>
 
@@ -29,8 +36,7 @@ Run the prediction with the following options:<br>
   random = True if you wish to use a random 16 amino acids as seed text (also require seeds.txt to generate this)<br>
            False or leave blank if you wish to use 64 amino acids from SARS-CoV-2 as seed text.<br><br>
   temperature = scaling parameter between 0 and 1, with higher values giving more surprising sequences and lower values<br>                  remaining more true to the original training set sequences<br>
-<br>
-<br>           
+<br>     
 Example:<br>
-     <b>python spike_sequence_generation.py --outfile tester --random True --lengths 25 --seqs 5</b><br>
+     <b>python spike_sequence_generation.py --outfile tester --random True --lengths 1400 --seqs 10</b><br>
 
