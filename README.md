@@ -23,12 +23,12 @@ To predict using random amino acids from the training set place seeds.txt in the
 
 Run the prediction with the following options:<br>
 
-  lengths = the length of sequence you want to generate<br>
-  seqs = the number of separate sequences of length [lengths] you want to generate<br>
-  outfile = the name of the file to save the output<br>
+  lengths = the length of sequence you want to generate<br><br>
+  seqs = the number of separate sequences of length [lengths] you want to generate<br><br>
+  outfile = the name of the file to save the output<br><br>
   random = True if you wish to use a random 16 amino acids as seed text (also require seeds.txt to generate this)<br>
-           False or leave blank if you wish to use 64 amino acids from SARS-CoV-2 as seed text.<br>
-  temperature = scaling parameter between 0 and 1, with higher values giving more surprising sequences and lower values<br>                   remaining more true to the original training set sequences
+           False or leave blank if you wish to use 64 amino acids from SARS-CoV-2 as seed text.<br><br>
+  temperature = scaling parameter between 0 and 1, with higher values giving more surprising sequences and lower values<br>                  remaining more true to the original training set sequences<br>
 <br>
 <br>           
 Example:<br>
