@@ -1,6 +1,6 @@
 # Coronavirus_DL
 
-**  Installation  **
+<h3> **  Installation  **</h3>
 
 Requires Python 3.5 and above<br>
 Prediction requires tensorflow 2.1.0 with Keras</br>
@@ -24,7 +24,7 @@ Files containing computer simulated (DL) sequences:<br>
 2. spike_from_sars_0.5.fasta<br>
 Entirely simulated coronavirus spike protein sequences generated using a seed text of 64 amino acids from the start of SARS-CoV-2 spike protein.<br>
 <br><br>
-<b> To Predict:</b><br>
+<h2><b> To Predict:</b></h2><br>
 Place the prediction model files (model.h5 and model.json) in the same directory<br>
 To predict using random amino acids from the training set place seeds.txt in the same directory<br>
 
