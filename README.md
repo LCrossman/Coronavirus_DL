@@ -3,11 +3,12 @@
 **  Installation  **
 
 Requires Python 3.5 and above
-Prediction requires tensorflow 2.1.0 with Keras backend
-This is best installed <i>via</i> conda
-
-Place the prediction model files (model.h5 and model.json) in the same directory
-Run the prediction with the following options:
+Prediction requires tensorflow 2.1.0 with Keras backend</br>
+<br>
+This is best installed <i>via</i> conda<br>
+<br>
+Place the prediction model files (model.h5 and model.json) in the same directory<br>
+Run the prediction with the following options:<br>
 
   lengths = the length of sequence you want to generate
   seqs = the number of separate sequences of length [lengths] you want to generate
