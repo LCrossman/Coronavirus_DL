@@ -1,6 +1,6 @@
 # Coronavirus_DL
 
-Installation
+**  Installation  **
 
 Requires Python 3.5 and above
 Prediction requires tensorflow 2.1.0 with Keras backend
