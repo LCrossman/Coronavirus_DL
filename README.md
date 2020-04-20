@@ -18,7 +18,7 @@ MacOS 10.12.6 (Sierra) or later (no GPU support)<br>
 Raspbian 9.0 or later<br>
 <br>
 <br>
-Files containing computer simulated (DL) sequences:
+Files containing computer simulated (DL) sequences:<br>
 1. spike_from_random_1.fasta<br>
 100 entirely simulated coronavirus spike protein sequences generated using seed texts with 16 amino acids selected at random <br>from the start of each protein in the training set.<br>
 2. spike_from_sars_0.5.fasta<br>
