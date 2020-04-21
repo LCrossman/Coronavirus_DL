@@ -23,6 +23,8 @@ Files containing computer simulated (DL) sequences:<br>
 100 entirely simulated coronavirus spike protein sequences generated using seed texts with 16 amino acids selected at random <br>from the start of each protein in the training set.<br>
 2. spike_from_sars_0.5.fasta<br>
 Entirely simulated coronavirus spike protein sequences generated using a seed text of 64 amino acids from the start of SARS-CoV-2 spike protein.<br>
+3. spike_1000_sars_0.5.fasta<br>
+1000 simulated coronavirus spike protein sequences with a seed text of 64 amino acids from the start of SARS-CoV-2 spike<br>
 <br><br>
 <h2><b> To Predict:</b></h2><br>
 Place the prediction model files (model.h5 and model.json) in the same directory<br>
