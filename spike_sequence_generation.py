@@ -7,11 +7,6 @@ import random
 from tensorflow.keras.models import load_model
 from tensorflow.keras.models import model_from_json
 import tensorflow.keras.backend
-from Bio import SeqIO
-from Bio.Seq import Seq
-from Bio.SeqRecord import SeqRecord
-from Bio.Alphabet import generic_protein
-
 
 print("If you are generating a lot of sequences, running with GPU available is advised")
 
@@ -113,16 +108,13 @@ if args.random == True:
   inseqs = [lin.rstrip() for lin in infile]
   random.shuffle(inseqs)
   for i in range(0,args.seqs):
+        # generate a single seed text from list
         seed_text = inseqs.pop()
         print("seed_text")
         
         result = generate_text(new_model, seed_text)
-    #    outfile_name = args.outfile+".fasta"
         sequences.append(">{}\n{}".format(str(i), str(result)))
         outfile.write(">{}\n{}\n".format(str(i), str(result)))
-   #     rec = SeqRecord(Seq(str(result), generic_protein), id=str(i), description="")
-   #     print("test_seqs", rec)
-   #     SeqIO.write(rec, outfile_name, "fasta")
 else:
     for i in range(0,args.seqs):
        result = generate_text(new_model, 'MFVFLVLLPLVSSQCVNLTTRTQLPPAYTNSFTRGVYYPDKVFRSSVLHSTQDLFLPFFSNVTWF')
@@ -136,6 +128,3 @@ outfile_name = args.outfile + '.fasta'
 outfile = open(outfile_name, 'a+')
 for seq in sequences:
   outfile.write(">{}\n{}\n".format(str(i), str(result)))
-#   outfile.write("showy is a thing")
-#print(outfile_name)
-#SeqIO.write(sequences, outfile, "fasta")
