@@ -66,7 +66,7 @@ def generate_text(model, start_string):
 
   # Number of characters to generate
   num_generate = args.lengths
-  print("number to generate is", num_generate)
+  print("length of sequence to generate is", num_generate)
 
   # Using character encoding
   input_eval = [char2idx[s] for s in start_string]
@@ -122,9 +122,9 @@ else:
        sequences.append(">{}\n{}".format(str(i), str(result)))
        outfile.write(">{}\n{}\n".format(str(i), str(result)))
 
-
-print(len(sequences), sequences)
-outfile_name = args.outfile + '.fasta'
-outfile = open(outfile_name, 'a+')
-for seq in sequences:
-  outfile.write(">{}\n{}\n".format(str(i), str(result)))
+print("{} sequences generated".format(len(sequences)))
+#print(len(sequences), sequences)
+#outfile_name = args.outfile + '.fasta'
+#outfile = open(outfile_name, 'a+')
+#for seq in sequences:
+#  outfile.write(">{}\n{}\n".format(str(i), str(result)))
